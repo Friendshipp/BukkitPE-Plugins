@@ -19,7 +19,7 @@ class Anti-ADV extends PluginBase implements Listener{
 
     public function onEnable(){
 	$this->saveDefaultConfig();
-	$this->format = new NoAdvertisingFormat($this);
+	$this->format = new Anti-ADVFormat($this);
 	$this->cfg = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
 	$this->getServer()->getLogger()->info(TF::GREEN . "Anti-ADV is fully loaded and working!");
 	$this->getServer()->getPluginManager()->registerEvents(new Anti-ADVListener($this), $this);
