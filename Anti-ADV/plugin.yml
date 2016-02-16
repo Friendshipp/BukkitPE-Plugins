@@ -1,0 +1,18 @@
+name: Anti-ADV
+main: CreeperCorn\Anti-ADV\Anti-ADV
+version: 1.0
+api: 1.13.0
+load: POSTWORLD
+authors:  CreeperCorn
+description: "Censor domains!"
+commands:
+  na:
+    description: "Main command"
+    usage: "/na <add|remove|list> [domain]"
+permissions:
+  anti-adv:
+    description: "Permission to perform command"
+    default: op
+  anti-adv.bypass:
+    description: "Players with this permissions can bypass domains."
+    default: false
